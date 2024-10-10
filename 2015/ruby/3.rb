@@ -19,12 +19,6 @@ File.foreach("./2015/3.txt") do |line|
       cords[1] -= 1
     end
   end
-
-  if houses.key?(cords)
-    houses[cords] += 1
-  else
-    houses[cords.dup] = 1
-  end
 end
 
 sum =  houses.values.filter {|n| n >= 1}
