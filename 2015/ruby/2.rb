@@ -1,4 +1,5 @@
-# part 1
+####################### PART ONE #######################
+
 # sum = 0
 
 # File.foreach("./2015/2.txt") do |line|
@@ -13,7 +14,8 @@
 # puts sum
 
 
-# part 2
+####################### PART TWO #######################
+
 sum = 0
 File.foreach("./2015/2.txt") do |line|
   l, w, h = line.split("x")
