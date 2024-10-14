@@ -1,17 +1,17 @@
 ####################### PART ONE #######################
 
-# sum = 0
+sum = 0
 
-# File.foreach("./2015/2.txt") do |line|
-#   l, w, h = line.split("x")
-#   l, w , h = l.to_i, w.to_i, h.chomp.to_i
+File.foreach("./2015/2.txt") do |line|
+  l, w, h = line.split("x")
+  l, w , h = l.to_i, w.to_i, h.chomp.to_i
 
-#   min = [l*h, h*w, l*w].min
-#   surface = 2*(l*h + h*w + l*w) + min
+  min = [l*h, h*w, l*w].min
+  surface = 2*(l*h + h*w + l*w) + min
 
-#   sum += surface
-# end
-# puts sum
+  sum += surface
+end
+puts sum # 1598415
 
 
 ####################### PART TWO #######################
@@ -27,4 +27,4 @@ File.foreach("./2015/2.txt") do |line|
 
   sum += surface
 end
-puts sum
+puts sum # 3812909
