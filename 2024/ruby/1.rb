@@ -7,19 +7,35 @@ File.foreach("./2024/1.txt") do |line|
   rights << r.chomp.to_i
 end
 
+# Part 1
 
-lefts = lefts.sort
-rights = rights.sort
+# lefts = lefts.sort
+# rights = rights.sort
 
-i = 0
+# i = 0
+# sum = 0
+# while i < lefts.length
+#     d = (lefts[i] - rights[i]).abs
+
+#     sum += d
+
+#     i += 1
+# end
+
+
+# p sum
+
+# Part 2
+
 sum = 0
-while i < lefts.length
-    d = (lefts[i] - rights[i]).abs
+lefts.each do |l|
+  times = 0
 
-    sum += d
+  rights.each do |r|
+    times += 1 if l == r
+  end
 
-    i += 1
+  sum += l * times
 end
-
 
 p sum
